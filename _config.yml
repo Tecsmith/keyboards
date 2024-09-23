@@ -1,0 +1,15 @@
+title: Tecsmith Keyboards
+description: List of keyboards made by Tecsmith
+url: "https://tecsmith.github.io/keyboards"
+
+# Theme setup
+# remote_theme: your-username/theme-repo-name
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
