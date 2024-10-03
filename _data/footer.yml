@@ -1,0 +1,9 @@
+menu:
+  - title: Other Tecsmith sites
+    items:
+      - title: tecsmith.au
+        url: https://tecsmith.au
+        svg: tecsmith
+      - title: Repo's on Github
+        url: https://github.com/tecsmith
+        fa: github-alt fab
