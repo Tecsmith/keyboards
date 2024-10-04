@@ -1,9 +1,47 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
-
+title: "Tecsmith Design"
+url: "https://tecsmith.design"
+description: >- # this means to ignore newlines until next back-indented value
+  Tecsmith Design is the open source design foundry for tecsmith.au.
+# baseurl: ""
+timezone: Australia/Sydney
+encoding: utf-8
 
 remote_theme: https://github.com/tecsmith/ts-jekyll-bs
 
+sass:
+  sass_dir: assets/css
+  ## PROD: Nice and tight
+  sourcemap: never
+  style: compressed
+
+exclude:
+  - 'README.DEV.md'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '.sass-cache/'
+  - '.jekyll-cache/'
+  - 'gemfiles/'
+  - '_plugins/'
+
+include:
+  ## --- from theme ---
+  - '404.html'
+  - 'browserconfig.xml'
+  - 'site.webmanifest'
+  - 'sitemap.xsl'
+
 plugins:
+  ## ... The Theme ...
   - jekyll-remote-theme
+  ## ... More ...
+  - jekyll-feed
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-avatar
+  - jekyll-last-modified-at
+  - jekyll-toc
+  - jekyll-email-protect
+
+## --- jekyll-seo-tag ---
+# See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+tagline: Tecsmith Design open source foundry.
